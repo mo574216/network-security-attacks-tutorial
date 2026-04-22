@@ -19,23 +19,23 @@ This website presents a structured tutorial on **network security attacks** for 
 
 ## Site Contents
 
-- [Foundations]({{ '/docs/foundations.md' | relative_url }})
-- [TCP/IP, Spoofing, and DoS]({{ '/docs/tcp-ip-dos.md' | relative_url }})
-- [DNS and Cache Poisoning]({{ '/docs/dns-attacks.md' | relative_url }})
-- [Buffer Overflow]({{ '/docs/buffer-overflow.md' | relative_url }})
-- [Viruses and Worms]({{ '/docs/malware.md' | relative_url }})
-- [Recon, Scanning, Sniffing, IDS]({{ '/docs/recon-scanning-ids.md' | relative_url }})
-- [Password Attacks]({{ '/docs/password-attacks.md' | relative_url }})
-- [Web Security Attacks]({{ '/docs/web-attacks.md' | relative_url }})
-- [P2P Security Issues]({{ '/docs/p2p-security.md' | relative_url }})
-- [Bots, Botnets, and DDoS]({{ '/docs/botnets-ddos.md' | relative_url }})
-- [Social Engineering and Trojans]({{ '/docs/social-engineering.md' | relative_url }})
-- [Mobile Device Security]({{ '/docs/mobile-security.md' | relative_url }})
-- [Defensive Principles]({{ '/docs/defensive-principles.md' | relative_url }})
-- [Lab Roadmap]({{ '/docs/lab-roadmap.md' | relative_url }})
-- [Review Questions]({{ '/docs/review-questions.md' | relative_url }})
+- [Foundations]({{ '/docs/foundations/' | relative_url }})
+- [TCP/IP, Spoofing, and DoS]({{ '/docs/tcp-ip-dos/' | relative_url }})
+- [DNS and Cache Poisoning]({{ '/docs/dns-attacks/' | relative_url }})
+- [Buffer Overflow]({{ '/docs/buffer-overflow/' | relative_url }})
+- [Viruses and Worms]({{ '/docs/malware/' | relative_url }})
+- [Recon, Scanning, Sniffing, IDS]({{ '/docs/recon-scanning-ids/' | relative_url }})
+- [Password Attacks]({{ '/docs/password-attacks/' | relative_url }})
+- [Web Security Attacks]({{ '/docs/web-attacks/' | relative_url }})
+- [P2P Security Issues]({{ '/docs/p2p-security/' | relative_url }})
+- [Bots, Botnets, and DDoS]({{ '/docs/botnets-ddos/' | relative_url }})
+- [Social Engineering and Trojans]({{ '/docs/social-engineering/' | relative_url }})
+- [Mobile Device Security]({{ '/docs/mobile-security/' | relative_url }})
+- [Defensive Principles]({{ '/docs/defensive-principles/' | relative_url }})
+- [Lab Roadmap]({{ '/docs/lab-roadmap/' | relative_url }})
+- [Review Questions]({{ '/docs/review-questions/' | relative_url }})
 
-## Suggested teaching sequence
+## Suggested reading sequence
 
 - Foundations
 - TCP/IP, spoofing, and denial of service
