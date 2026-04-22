@@ -1,6 +1,9 @@
 ---
-title: Home
+title: "Home"
 layout: default
+nav_order: 1
+permalink: "/"
+has_children: false
 ---
 
 # Network Security Attacks Tutorial
@@ -16,21 +19,21 @@ This website presents a structured tutorial on **network security attacks** for 
 
 ## Site Contents
 
-- [Foundations](/docs/foundations.md)
-- [TCP/IP, Spoofing, and DoS](/docs/tcp-ip-dos.md)
-- [DNS and Cache Poisoning](/docs/dns-attacks.md)
-- [Buffer Overflow](/docs/buffer-overflow.md)
-- [Viruses and Worms](/docs/malware.md)
-- [Recon, Scanning, Sniffing, IDS](/docs/recon-scanning-ids.md)
-- [Password Attacks](/docs/password-attacks.md)
-- [Web Security Attacks](/docs/web-attacks.md)
-- [P2P Security Issues](/docs/p2p-security.md)
-- [Bots, Botnets, and DDoS](/docs/botnets-ddos.md)
-- [Social Engineering and Trojans](/docs/social-engineering.md)
-- [Mobile Device Security](/docs/mobile-security.md)
-- [Defensive Principles](/docs/defensive-principles.md)
-- [Lab Roadmap](/docs/lab-roadmap.md)
-- [Review Questions](/docs/review-questions.md)
+- [Foundations]({{ '/docs/foundations.md' | relative_url }})
+- [TCP/IP, Spoofing, and DoS]({{ '/docs/tcp-ip-dos.md' | relative_url }})
+- [DNS and Cache Poisoning]({{ '/docs/dns-attacks.md' | relative_url }})
+- [Buffer Overflow]({{ '/docs/buffer-overflow.md' | relative_url }})
+- [Viruses and Worms]({{ '/docs/malware.md' | relative_url }})
+- [Recon, Scanning, Sniffing, IDS]({{ '/docs/recon-scanning-ids.md' | relative_url }})
+- [Password Attacks]({{ '/docs/password-attacks.md' | relative_url }})
+- [Web Security Attacks]({{ '/docs/web-attacks.md' | relative_url }})
+- [P2P Security Issues]({{ '/docs/p2p-security.md' | relative_url }})
+- [Bots, Botnets, and DDoS]({{ '/docs/botnets-ddos.md' | relative_url }})
+- [Social Engineering and Trojans]({{ '/docs/social-engineering.md' | relative_url }})
+- [Mobile Device Security]({{ '/docs/mobile-security.md' | relative_url }})
+- [Defensive Principles]({{ '/docs/defensive-principles.md' | relative_url }})
+- [Lab Roadmap]({{ '/docs/lab-roadmap.md' | relative_url }})
+- [Review Questions]({{ '/docs/review-questions.md' | relative_url }})
 
 ## Suggested teaching sequence
 
