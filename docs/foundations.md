@@ -1,6 +1,6 @@
 ---
-    title: Foundations: Why Network Attacks Work
-    layout: default
+title: Foundations: Why Network Attacks Work
+layout: default
 ---
 
 ## Tutorial Navigation
