@@ -36,7 +36,7 @@ The Internet protocol stack was built for interoperability, robustness, and scal
 - Routers and hosts must process packets quickly, often before deep verification is possible.
 - Diagnostic and control behavior can reveal internal conditions.
 - Congestion-control logic can be manipulated rather than merely overloaded.
-- Security decisions frequently depend on context outside the packet itself. :contentReference[oaicite:1]{index=1}
+- Security decisions frequently depend on context outside the packet itself. 
 
 This means TCP/IP attacks do not all look alike. Some attacks forge identity, some exhaust state, some exploit retransmission timing, some abuse congestion control, and some try to degrade service while staying statistically quiet.
 
@@ -60,7 +60,7 @@ At a high level:
 IP provides addressing, forwarding, and best-effort packet delivery across interconnected networks.
 
 ### TCP
-TCP provides reliable, ordered, full-duplex byte-stream transport between endpoints. It establishes connections, tracks sequence space, acknowledges data, retransmits lost segments, and reacts to congestion. :contentReference[oaicite:2]{index=2}
+TCP provides reliable, ordered, full-duplex byte-stream transport between endpoints. It establishes connections, tracks sequence space, acknowledges data, retransmits lost segments, and reacts to congestion. 
 
 That clean division of responsibilities also creates a clean division of attack opportunities.
 
@@ -76,7 +76,7 @@ That clean division of responsibilities also creates a clean division of attack 
 - blind spoofed segment injection,
 - reset or sequence-number guessing attacks,
 - congestion-control manipulation,
-- application starvation through connection management abuse. :contentReference[oaicite:3]{index=3}
+- application starvation through connection management abuse. 
 
 The key lesson is that **IP and TCP are not just functional layers; they are attack surfaces with different economics**.
 
@@ -110,7 +110,7 @@ So when an attack is described as “TCP-layer” or “IP-layer,” that is usu
 
 ## 2.4 IPv4 Header Fields That Matter in Security
 
-RFC 791 defines the IPv4 header and its core fields. In a networking class, these fields may be introduced as packet-format details. In security, they are clues, levers, and sometimes weapons. :contentReference[oaicite:4]{index=4}
+RFC 791 defines the IPv4 header and its core fields. In a networking class, these fields may be introduced as packet-format details. In security, they are clues, levers, and sometimes weapons. 
 
 Important fields include:
 
@@ -122,7 +122,7 @@ Important fields include:
 - **Flags**
 - **Fragment Offset**
 - **Header Checksum**
-- **Options** :contentReference[oaicite:5]{index=5}
+- **Options** 
 
 ### 2.4.1 Source Address
 
@@ -179,7 +179,7 @@ Security significance:
 - fragmentation complicates filtering and reassembly,
 - fragmented traffic can stress state and inspection systems,
 - security devices may disagree with end hosts on fragment interpretation,
-- historically, fragmentation has been used to bypass or confuse defenses. :contentReference[oaicite:6]{index=6}
+- historically, fragmentation has been used to bypass or confuse defenses. 
 
 Students should remember this general lesson:
 
@@ -199,13 +199,13 @@ Security-relevant TCP concepts include:
 - flags such as SYN, ACK, RST, FIN,
 - receive windows,
 - retransmission behavior,
-- and endpoint state transitions. :contentReference[oaicite:7]{index=7}
+- and endpoint state transitions. 
 
 ### Ports
 Ports expose services. Attackers care about ports because they map network reachability to specific application logic.
 
 ### Sequence and acknowledgment numbers
-These fields are central to ordered, reliable delivery. They are also central to off-path and blind injection attacks because guessing them correctly can let a spoofed segment appear plausible to a receiver. RFC 5961 was written specifically to improve TCP robustness against blind in-window attacks. :contentReference[oaicite:8]{index=8}
+These fields are central to ordered, reliable delivery. They are also central to off-path and blind injection attacks because guessing them correctly can let a spoofed segment appear plausible to a receiver. RFC 5961 was written specifically to improve TCP robustness against blind in-window attacks. 
 
 ### Control bits
 - **SYN** creates connection state.
@@ -225,7 +225,7 @@ TCP uses a three-way handshake:
 2. Server replies **SYN+ACK**
 3. Client replies **ACK**
 
-This handshake is foundational because it lets both sides synchronize state and confirm reachability. RFC 9293 defines this stateful connection-establishment process in detail. :contentReference[oaicite:9]{index=9}
+This handshake is foundational because it lets both sides synchronize state and confirm reachability. RFC 9293 defines this stateful connection-establishment process in detail. 
 
 But from an attacker’s viewpoint, the handshake has a crucial property:
 
@@ -242,7 +242,7 @@ When the server receives a SYN on a listening port, it typically:
 - sends SYN+ACK,
 - and waits for the final ACK.
 
-If that final ACK never comes, the server still must remember the half-open connection for some period of time. RFC 4987 describes SYN flooding precisely as exploiting this state-retention behavior. :contentReference[oaicite:10]{index=10}
+If that final ACK never comes, the server still must remember the half-open connection for some period of time. RFC 4987 describes SYN flooding precisely as exploiting this state-retention behavior. 
 
 This is a perfect example of asymmetric security economics:
 
@@ -330,7 +330,7 @@ TCP congestion control exists to keep the network usable under stress. It adjust
 - timeouts,
 - duplicate acknowledgments,
 - loss inference,
-- and sometimes ECN-related behavior in modern environments. :contentReference[oaicite:11]{index=11}
+- and sometimes ECN-related behavior in modern environments. 
 
 This is a control system. That alone should interest a security student, because control systems can often be manipulated.
 
@@ -346,7 +346,7 @@ That is exactly the intuition behind the Shrew attack.
 
 ## 2.10 The Shrew Attack: Low Rate, High Insight
 
-The classic Kuzmanovic and Knightly paper showed that a denial-of-service attack need not be high rate to be highly effective. The authors studied low-rate TCP-targeted DoS attacks, which they termed “shrew attacks,” that send brief bursts timed to interact destructively with TCP retransmission timeout behavior. :contentReference[oaicite:12]{index=12}
+The classic Kuzmanovic and Knightly paper showed that a denial-of-service attack need not be high rate to be highly effective. The authors studied low-rate TCP-targeted DoS attacks, which they termed “shrew attacks,” that send brief bursts timed to interact destructively with TCP retransmission timeout behavior. 
 
 ### Core idea
 
@@ -379,7 +379,7 @@ That is why traffic analysis cannot look only for “the biggest flows.” Somet
 
 ## 2.11 SYN Flooding: The Canonical TCP DoS Attack
 
-RFC 4987 describes SYN flooding as a denial-of-service method that exploits the state TCP retains after receiving SYN segments on listening ports. :contentReference[oaicite:13]{index=13}
+RFC 4987 describes SYN flooding as a denial-of-service method that exploits the state TCP retains after receiving SYN segments on listening ports. 
 
 ### 2.11.1 Basic mechanism
 
@@ -423,8 +423,7 @@ Crucially, the server process may still be running. This is an important operati
 
 ## 2.12 Common Mitigations Against SYN Flooding
 
-RFC 4987 surveys common SYN flooding mitigations and their trade-offs. That trade-off idea is important: there is rarely a perfect defense with no operational cost. :contentReference[oaicite:14]{index=14}
-
+RFC 4987 surveys common SYN flooding mitigations and their trade-offs. That trade-off idea is important: there is rarely a perfect defense with no operational cost. 
 ### 2.12.1 Increase backlog resources
 This can help absorb bursts, but it only raises the ceiling. It does not remove the asymmetry.
 
@@ -479,7 +478,7 @@ So spoofing is not universally useful. It is strategically useful where one-way 
 
 ## 2.14 BCP 38 and Ingress Filtering: The Network Should Refuse Lies at the Edge
 
-RFC 2827, also known as BCP 38, recommends network ingress filtering to block packets with forged source addresses from leaving customer or downstream networks. RFC 3704 extends the discussion for multihomed environments. :contentReference[oaicite:15]{index=15}
+RFC 2827, also known as BCP 38, recommends network ingress filtering to block packets with forged source addresses from leaving customer or downstream networks. RFC 3704 extends the discussion for multihomed environments. 
 
 ### Fundamental idea
 
@@ -507,7 +506,7 @@ That is why some attacks remain feasible even though the defense principle is we
 
 ## 2.15 Blind TCP Attacks Beyond DoS
 
-A security-centered TCP chapter should not stop at SYN floods. TCP has also faced blind in-window injection issues, which is why RFC 5961 introduced changes to improve robustness against spoofed off-path segments that might otherwise terminate or corrupt active connections. :contentReference[oaicite:16]{index=16}
+A security-centered TCP chapter should not stop at SYN floods. TCP has also faced blind in-window injection issues, which is why RFC 5961 introduced changes to improve robustness against spoofed off-path segments that might otherwise terminate or corrupt active connections. 
 
 This matters for two reasons:
 
