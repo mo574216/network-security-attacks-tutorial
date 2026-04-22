@@ -129,6 +129,6 @@ Examples:
 
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← Home](index.md) | [TCP/IP, Spoofing, and DoS →](tcp-ip-dos.md)
+[← Home](index.md) | [TCP/IP, Spoofing, and DoS →](tcp-ip-dos.md)
