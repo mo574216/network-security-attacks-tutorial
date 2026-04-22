@@ -1,6 +1,8 @@
 ---
-title: Glossary
+title: "Glossary"
 layout: default
+nav_order: 17
+permalink: "/docs/glossary/"
 ---
 
 # Glossary
@@ -28,3 +30,4 @@ layout: default
 - **SYN flood**: DoS attack based on exhausting server resources during TCP setup.
 - **TTL**: Time To Live field used to limit how far a packet can travel.
 - **Worm**: Self-propagating malware that spreads from host to host.
+

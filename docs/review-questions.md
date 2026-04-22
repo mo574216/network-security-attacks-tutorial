@@ -1,31 +1,11 @@
-    ---
-    title: Review Questions
-    layout: default
-    ---
+---
+title: "Review Questions"
+layout: default
+nav_order: 16
+permalink: "/docs/review-questions/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 15. Review Questions
+# 15. Review Questions
 
 ## Conceptual Questions
 
@@ -54,9 +34,9 @@
 5. A browser executes injected script after a victim clicks a crafted link. What type of vulnerability is this?
 6. A company sees thousands of compromised webcams sending traffic to one target. What major security story does this resemble?
 7. A smartcard reveals secret-dependent timing variation. What attack family does that indicate?
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← Lab Roadmap](lab-roadmap.md) | [Glossary →](glossary.md)
+[← Suggested Lab Roadmap]({{ '/docs/lab-roadmap/' | relative_url }}) | [Glossary →]({{ '/docs/glossary/' | relative_url }})
+

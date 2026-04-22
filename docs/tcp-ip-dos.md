@@ -1,30 +1,11 @@
-    ---
-    title: TCP/IP Vulnerabilities and DoS Attacks
-    layout: default
-    ---
+---
+title: "TCP/IP Vulnerabilities and DoS Attacks"
+layout: default
+nav_order: 3
+permalink: "/docs/tcp-ip-dos/"
+---
 
-[Home](index.md) | [Glossary](glossary.md)
-
-## Tutorial Navigation
-
-- [Foundations](/docs/foundations.md)
-- [TCP/IP, Spoofing, and DoS](/docs/tcp-ip-dos.md)
-- [DNS and Cache Poisoning](/docs/dns-attacks.md)
-- [Buffer Overflow](/docs/buffer-overflow.md)
-- [Viruses and Worms](/docs/malware.md)
-- [Recon, Scanning, Sniffing, IDS](/docs/recon-scanning-ids.md)
-- [Password Attacks](/docs/password-attacks.md)
-- [Web Security Attacks](/docs/web-attacks.md)
-- [P2P Security Issues](/docs/p2p-security.md)
-- [Bots, Botnets, and DDoS](/docs/botnets-ddos.md)
-- [Social Engineering and Trojans](/docs/social-engineering.md)
-- [Mobile Device Security](/docs/mobile-security.md)
-- [Defensive Principles](/docs/defensive-principles.md)
-- [Lab Roadmap](/docs/lab-roadmap.md)
-- [Review Questions](/docs/review-questions.md)
-
-
-    # 2. TCP/IP Vulnerabilities and DoS Attacks
+# 2. TCP/IP Vulnerabilities and DoS Attacks
 
 This module begins with TCP/IP because many attacks become intuitive only after we understand how communication is supposed to work.
 
@@ -199,9 +180,9 @@ Useful operational questions include:
 - Is abnormal TCP state accumulation occurring?
 
 Utilities such as **netstat** help defenders observe local network behavior and diagnose attacks or misconfigurations.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← Foundations](foundations.md) | [DNS and Cache Poisoning →](dns-attacks.md)
+[← Foundations: Why Network Attacks Work]({{ '/docs/foundations/' | relative_url }}) | [DNS and DNS Cache Poisoning →]({{ '/docs/dns-attacks/' | relative_url }})
+

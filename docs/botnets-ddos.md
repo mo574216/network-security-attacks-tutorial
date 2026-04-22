@@ -1,31 +1,11 @@
-    ---
-    title: Bots, Botnets, and DDoS
-    layout: default
-    ---
+---
+title: "Bots, Botnets, and DDoS"
+layout: default
+nav_order: 11
+permalink: "/docs/botnets-ddos/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 10. Bots, Botnets, and DDoS
+# 10. Bots, Botnets, and DDoS
 
 ## 10.1 What is a Bot?
 
@@ -109,9 +89,9 @@ The Mirai botnet highlighted how poorly secured IoT devices such as webcams can 
 
 ### Key lesson
 Weak embedded security can create massive systemic risk far beyond the value of each individual device.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← P2P Security Issues](p2p-security.md) | [Social Engineering and Trojans →](social-engineering.md)
+[← P2P Security Issues]({{ '/docs/p2p-security/' | relative_url }}) | [Social Engineering, Spear Phishing, and Trojans →]({{ '/docs/social-engineering/' | relative_url }})
+

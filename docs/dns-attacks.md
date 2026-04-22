@@ -1,31 +1,11 @@
-    ---
-    title: DNS and DNS Cache Poisoning
-    layout: default
-    ---
+---
+title: "DNS and DNS Cache Poisoning"
+layout: default
+nav_order: 4
+permalink: "/docs/dns-attacks/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 3. DNS and DNS Cache Poisoning
+# 3. DNS and DNS Cache Poisoning
 
 DNS is one of the most important systems in all of networking because users work with names, while protocols need IP addresses.
 
@@ -152,9 +132,9 @@ Important idea:
 - monitor unexpected changes,
 - validate zones,
 - minimize overly long TTLs for sensitive situations.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← TCP/IP, Spoofing, and DoS](tcp-ip-dos.md) | [Buffer Overflow →](buffer-overflow.md)
+[← TCP/IP Vulnerabilities and DoS Attacks]({{ '/docs/tcp-ip-dos/' | relative_url }}) | [Buffer Overflow Attacks →]({{ '/docs/buffer-overflow/' | relative_url }})
+

@@ -1,31 +1,11 @@
-    ---
-    title: Buffer Overflow Attacks
-    layout: default
-    ---
+---
+title: "Buffer Overflow Attacks"
+layout: default
+nav_order: 5
+permalink: "/docs/buffer-overflow/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 4. Buffer Overflow Attacks
+# 4. Buffer Overflow Attacks
 
 Buffer overflow is one of the classic software-security topics because it reveals how low-level programming errors become full remote compromise.
 
@@ -139,9 +119,9 @@ A related but less commonly emphasized issue is **buffer underflow**, where inco
 - sandbox vulnerable components,
 - separate privileges,
 - monitor crash patterns and exploit attempts.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← DNS and Cache Poisoning](dns-attacks.md) | [Viruses and Worms →](malware.md)
+[← DNS and DNS Cache Poisoning]({{ '/docs/dns-attacks/' | relative_url }}) | [Malware: Viruses and Worms →]({{ '/docs/malware/' | relative_url }})
+

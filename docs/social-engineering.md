@@ -1,31 +1,11 @@
-    ---
-    title: Social Engineering, Spear Phishing, and Trojans
-    layout: default
-    ---
+---
+title: "Social Engineering, Spear Phishing, and Trojans"
+layout: default
+nav_order: 12
+permalink: "/docs/social-engineering/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 11. Social Engineering, Spear Phishing, and Trojans
+# 11. Social Engineering, Spear Phishing, and Trojans
 
 Not all attacks begin with a technical flaw.  
 Many begin with human manipulation.
@@ -84,9 +64,9 @@ The tutorial perspective should emphasize that:
 - secure systems still fail if users are deceived,
 - authentication is only as strong as the surrounding workflow,
 - and email remains one of the highest-value attack channels.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← Bots, Botnets, and DDoS](botnets-ddos.md) | [Mobile Device Security →](mobile-security.md)
+[← Bots, Botnets, and DDoS]({{ '/docs/botnets-ddos/' | relative_url }}) | [Mobile Device Security Vulnerabilities →]({{ '/docs/mobile-security/' | relative_url }})
+

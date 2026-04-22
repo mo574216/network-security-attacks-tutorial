@@ -1,31 +1,11 @@
-    ---
-    title: Password Attacks: Dictionary and Rainbow-Table Attacks
-    layout: default
-    ---
+---
+title: "Password Attacks: Dictionary and Rainbow-Table Attacks"
+layout: default
+nav_order: 8
+permalink: "/docs/password-attacks/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 7. Password Attacks: Dictionary and Rainbow-Table Attacks
+# 7. Password Attacks: Dictionary and Rainbow-Table Attacks
 
 Password-protected systems often fail not because cryptography is broken, but because passwords and authentication workflows are weak.
 
@@ -111,9 +91,9 @@ They show that:
 - anomaly detection,
 - strong password policies,
 - and secure administrative defaults.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md) | [Web Security Attacks →](web-attacks.md)
+[← Reconnaissance, Scanning, Sniffing, IDS, and Penetration Testing]({{ '/docs/recon-scanning-ids/' | relative_url }}) | [Web Security Attacks →]({{ '/docs/web-attacks/' | relative_url }})
+

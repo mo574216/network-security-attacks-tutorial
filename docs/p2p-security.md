@@ -1,31 +1,11 @@
-    ---
-    title: P2P Security Issues
-    layout: default
-    ---
+---
+title: "P2P Security Issues"
+layout: default
+nav_order: 10
+permalink: "/docs/p2p-security/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 9. P2P Security Issues
+# 9. P2P Security Issues
 
 Peer-to-peer systems distribute storage and lookup across many nodes instead of relying on central servers.
 
@@ -81,9 +61,9 @@ Freenet is an important example focused on anonymous information distribution.
 - anonymity limits,
 - trust-path assumptions,
 - and exploitation of overlay logic.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← Web Security Attacks](web-attacks.md) | [Bots, Botnets, and DDoS →](botnets-ddos.md)
+[← Web Security Attacks]({{ '/docs/web-attacks/' | relative_url }}) | [Bots, Botnets, and DDoS →]({{ '/docs/botnets-ddos/' | relative_url }})
+

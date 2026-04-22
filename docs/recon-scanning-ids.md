@@ -1,31 +1,11 @@
-    ---
-    title: Reconnaissance, Scanning, Sniffing, IDS, and Penetration Testing
-    layout: default
-    ---
+---
+title: "Reconnaissance, Scanning, Sniffing, IDS, and Penetration Testing"
+layout: default
+nav_order: 7
+permalink: "/docs/recon-scanning-ids/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 6. Reconnaissance, Scanning, Sniffing, IDS, and Penetration Testing
+# 6. Reconnaissance, Scanning, Sniffing, IDS, and Penetration Testing
 
 Before exploitation, attackers often need visibility.
 
@@ -167,9 +147,9 @@ Netcat is a versatile utility for:
 - and understanding client-server behavior.
 
 It is useful both offensively and defensively.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← Viruses and Worms](malware.md) | [Password Attacks →](password-attacks.md)
+[← Malware: Viruses and Worms]({{ '/docs/malware/' | relative_url }}) | [Password Attacks: Dictionary and Rainbow-Table Attacks →]({{ '/docs/password-attacks/' | relative_url }})
+

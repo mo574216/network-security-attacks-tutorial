@@ -1,31 +1,11 @@
-    ---
-    title: Web Security Attacks
-    layout: default
-    ---
+---
+title: "Web Security Attacks"
+layout: default
+nav_order: 9
+permalink: "/docs/web-attacks/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 8. Web Security Attacks
+# 8. Web Security Attacks
 
 Web security deserves its own major section because modern attacks frequently target applications, browsers, cookies, sessions, and databases.
 
@@ -145,9 +125,9 @@ If script can read them and exfiltrate them, attackers may hijack sessions.
 Heap spraying is a browser exploitation strategy in which memory is filled with repeated attacker-controlled patterns to increase the chance that redirected execution lands on useful payload bytes.
 
 It is a bridge topic between web security and memory corruption.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← Password Attacks](password-attacks.md) | [P2P Security Issues →](p2p-security.md)
+[← Password Attacks: Dictionary and Rainbow-Table Attacks]({{ '/docs/password-attacks/' | relative_url }}) | [P2P Security Issues →]({{ '/docs/p2p-security/' | relative_url }})
+

@@ -1,31 +1,11 @@
-    ---
-    title: Cross-Cutting Defensive Principles
-    layout: default
-    ---
+---
+title: "Cross-Cutting Defensive Principles"
+layout: default
+nav_order: 14
+permalink: "/docs/defensive-principles/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 13. Cross-Cutting Defensive Principles
+# 13. Cross-Cutting Defensive Principles
 
 This section ties the attack modules together.
 
@@ -87,9 +67,9 @@ Students must understand:
 - scanning and exploitation are legal only with authorization,
 - proof-of-concept work belongs in isolated labs,
 - and security education must strengthen defense rather than enable harm.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← Mobile Device Security](mobile-security.md) | [Lab Roadmap →](lab-roadmap.md)
+[← Mobile Device Security Vulnerabilities]({{ '/docs/mobile-security/' | relative_url }}) | [Suggested Lab Roadmap →]({{ '/docs/lab-roadmap/' | relative_url }})
+

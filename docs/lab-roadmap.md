@@ -1,31 +1,11 @@
-    ---
-    title: Suggested Lab Roadmap
-    layout: default
-    ---
+---
+title: "Suggested Lab Roadmap"
+layout: default
+nav_order: 15
+permalink: "/docs/lab-roadmap/"
+---
 
-    [Home](index.md) | [Glossary](glossary.md)
-
-    ## Tutorial Navigation
-
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 14. Suggested Lab Roadmap
+# 14. Suggested Lab Roadmap
 
 Below is a safe, educational progression for an undergraduate course.
 
@@ -78,9 +58,9 @@ Below is a safe, educational progression for an undergraduate course.
   - a corporate smartphone,
   - a smartcard,
   - and a USB-based removable device.
-
 ---
 
-    ## Page Navigation
+## Page Navigation
 
-    [← Defensive Principles](defensive-principles.md) | [Review Questions →](review-questions.md)
+[← Cross-Cutting Defensive Principles]({{ '/docs/defensive-principles/' | relative_url }}) | [Review Questions →]({{ '/docs/review-questions/' | relative_url }})
+
