@@ -1,5 +1,5 @@
 ---
-title: Foundations: Why Network Attacks Work
+title: "Foundations: Why Network Attacks Work"
 layout: default
 ---
 
