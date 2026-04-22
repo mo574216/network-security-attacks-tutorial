@@ -1,7 +1,7 @@
 title: Network Security Attacks Tutorial
 description: A comprehensive undergraduate tutorial on network security attacks, defenses, and analysis.
-baseurl: ""
-url: ""
+baseurl: "/network-security-attacks-tutorial"
+url: "https://mo574216.github.io/"
 
 remote_theme: just-the-docs/just-the-docs
 
