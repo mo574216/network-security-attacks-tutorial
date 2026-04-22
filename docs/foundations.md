@@ -3,29 +3,25 @@
     layout: default
     ---
 
-    [Home](index.md) | [Glossary](glossary.md)
+## Tutorial Navigation
+- [Foundations](/docs/foundations.md)
+- [TCP/IP, Spoofing, and DoS](/docs/tcp-ip-dos.md)
+- [DNS and Cache Poisoning](/docs/dns-attacks.md)
+- [Buffer Overflow](/docs/buffer-overflow.md)
+- [Viruses and Worms](/docs/malware.md)
+- [Recon, Scanning, Sniffing, IDS](/docs/recon-scanning-ids.md)
+- [Password Attacks](/docs/password-attacks.md)
+- [Web Security Attacks](/docs/web-attacks.md)
+- [P2P Security Issues](/docs/p2p-security.md)
+- [Bots, Botnets, and DDoS](/docs/botnets-ddos.md)
+- [Social Engineering and Trojans](/docs/social-engineering.md)
+- [Mobile Device Security](/docs/mobile-security.md)
+- [Defensive Principles](/docs/defensive-principles.md)
+- [Lab Roadmap](/docs/lab-roadmap.md)
+- [Review Questions](/docs/review-questions.md)
 
-    ## Tutorial Navigation
 
-    - [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
-- [DNS and Cache Poisoning](dns-attacks.md)
-- [Buffer Overflow](buffer-overflow.md)
-- [Viruses and Worms](malware.md)
-- [Recon, Scanning, Sniffing, IDS](recon-scanning-ids.md)
-- [Password Attacks](password-attacks.md)
-- [Web Security Attacks](web-attacks.md)
-- [P2P Security Issues](p2p-security.md)
-- [Bots, Botnets, and DDoS](botnets-ddos.md)
-- [Social Engineering and Trojans](social-engineering.md)
-- [Mobile Device Security](mobile-security.md)
-- [Defensive Principles](defensive-principles.md)
-- [Lab Roadmap](lab-roadmap.md)
-- [Review Questions](review-questions.md)
-
-    ---
-
-    # 1. Foundations: Why Network Attacks Work
+# 1. Foundations: Why Network Attacks Work
 
 Network attacks succeed because digital systems must remain **open enough to communicate** while also being **restrictive enough to resist abuse**. Security problems emerge wherever there is a mismatch between:
 
