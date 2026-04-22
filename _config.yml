@@ -1,4 +1,33 @@
 title: Network Security Attacks Tutorial
-description: GitHub Pages tutorial for undergraduate students on network security attacks.
-theme: jekyll-theme-cayman
+description: A comprehensive undergraduate tutorial on network security attacks, defenses, and analysis.
+baseurl: ""
+url: ""
+
+remote_theme: just-the-docs/just-the-docs
+
+color_scheme: light
+search_enabled: true
+heading_anchors: true
+
+aux_links:
+  "View on GitHub":
+    - "https://github.com/mo574216/network-security-attacks-tutorial"
+
+nav_enabled: true
+nav_sort: case_insensitive
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: "Educational material for undergraduate network security students."
+
 markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
