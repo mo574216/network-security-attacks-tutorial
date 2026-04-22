@@ -9,13 +9,6 @@ This repository contains a GitHub Pages-ready tutorial on network security attac
 - `glossary.md` — key terms
 - `_config.yml` — basic Jekyll configuration
 
-## Recommended workflow
-
-1. Upload all files to a GitHub repository.
-2. Enable GitHub Pages in repository settings.
-3. Use the root branch or `/docs` directory as your Pages source.
-4. Adjust theme, navigation, and wording as needed.
-
 ## Topics covered
 
 - Foundations
