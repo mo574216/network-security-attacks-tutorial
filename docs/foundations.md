@@ -1,7 +1,7 @@
-    ---
+---
     title: Foundations: Why Network Attacks Work
     layout: default
-    ---
+---
 
 ## Tutorial Navigation
 - [Foundations](/docs/foundations.md)
