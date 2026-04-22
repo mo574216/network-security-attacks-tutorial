@@ -11,7 +11,7 @@ This course begins from a simple but deep observation:
 
 > **Every cyber attack is an abuse of a legitimate mechanism, a broken assumption, or a misplaced trust decision.**
 
-Networks are built to enable communication. Security exists because communication itself creates exposure. A host must accept packets before it can decide whether those packets are useful, malformed, malicious, or deceptive. A service must parse input before it can reject it. A browser must render content before a user can benefit from it. A server must allocate resources before a session becomes productive. DNS must answer queries before applications can find each other. In all of these cases, the defender is forced to remain open enough for normal use, while the attacker studies exactly how that openness can be turned into leverage. :contentReference[oaicite:1]{index=1}
+Networks are built to enable communication. Security exists because communication itself creates exposure. A host must accept packets before it can decide whether those packets are useful, malformed, malicious, or deceptive. A service must parse input before it can reject it. A browser must render content before a user can benefit from it. A server must allocate resources before a session becomes productive. DNS must answer queries before applications can find each other. In all of these cases, the defender is forced to remain open enough for normal use, while the attacker studies exactly how that openness can be turned into leverage. 
 
 So the foundational question of network security is not merely:
 
@@ -36,7 +36,7 @@ A system is not secure just because it behaves correctly when users act honestly
 - credentials are guessed,
 - sessions are hijacked,
 - browsers execute hostile content,
-- or users are deceived into helping the attacker. :contentReference[oaicite:2]{index=2}
+- or users are deceived into helping the attacker. 
 
 This is why network security is inherently **adversarial engineering**. You must understand both:
 
@@ -61,7 +61,7 @@ Any system that can receive traffic exposes some **attack surface**. In practice
 - software update paths,
 - mobile apps,
 - removable media,
-- and the humans who operate the system. :contentReference[oaicite:3]{index=3}
+- and the humans who operate the system. 
 
 Students often think of attack surface too narrowly, as if it means only “open ports.” That is incomplete. A port may expose a daemon, but an application may also expose unsafe parsing logic, a database query path, a password-reset workflow, a browser script context, or a trust relationship with another machine. The attacker does not care whether the weakness lives in TCP, DNS, PHP, SQL, JavaScript, or a human inbox. The attacker cares only that it can be reached and exploited.
 
@@ -82,14 +82,12 @@ That way of thinking will unify the entire course.
 Protocols are full of assumptions because protocols must simplify reality in order to work at internet scale.
 
 ### Example 1: IP
-IP is designed to deliver packets across networks. It is fundamentally about addressing and routing, not about proving that a source address is truthful. That is why source-IP spoofing is possible in many contexts unless networks apply filtering at their edges. BCP 38 exists precisely because forged source addresses are operationally dangerous and widely useful to attackers. :contentReference[oaicite:4]{index=4}
+IP is designed to deliver packets across networks. It is fundamentally about addressing and routing, not about proving that a source address is truthful. That is why source-IP spoofing is possible in many contexts unless networks apply filtering at their edges. BCP 38 exists precisely because forged source addresses are operationally dangerous and widely useful to attackers. 
 
 ### Example 2: TCP
-TCP provides reliable, stateful communication and establishes sessions through a three-way handshake. That handshake is excellent for normal communication, but it also means the server may create partial state before the connection is fully established. SYN flooding abuses this design fact. The attack does not “break TCP” in the sense of violating the protocol. It weaponizes TCP’s normal state allocation behavior. RFC 9293 explicitly defines the three-way handshake and the stateful nature of TCP connection establishment. :contentReference[oaicite:5]{index=5}
-
+TCP provides reliable, stateful communication and establishes sessions through a three-way handshake. That handshake is excellent for normal communication, but it also means the server may create partial state before the connection is fully established. SYN flooding abuses this design fact. The attack does not “break TCP” in the sense of violating the protocol. It weaponizes TCP’s normal state allocation behavior. RFC 9293 explicitly defines the three-way handshake and the stateful nature of TCP connection establishment. 
 ### Example 3: DNS
-DNS is a hierarchical, distributed naming system. That architecture gives it enormous scalability, but also introduces caching, delegation, trust chains, and query/response timing windows. Those same features create opportunities for cache poisoning, hijacking, and redirection. RFC 1034 defines DNS as a distributed hierarchical namespace and distributed database, which is exactly why it is both powerful and attackable. :contentReference[oaicite:6]{index=6}
-
+DNS is a hierarchical, distributed naming system. That architecture gives it enormous scalability, but also introduces caching, delegation, trust chains, and query/response timing windows. Those same features create opportunities for cache poisoning, hijacking, and redirection. RFC 1034 defines DNS as a distributed hierarchical namespace and distributed database, which is exactly why it is both powerful and attackable. 
 The lesson is foundational:
 
 > **Attacks often succeed not because protocols are useless, but because protocols optimize for function first and rely on surrounding controls to contain abuse.**
@@ -108,11 +106,10 @@ The more state a system must remember per request, client, session, lookup, or t
 
 ### Why this matters
 
-- A TCP server maintains connection state. That is why half-open connection abuse matters. :contentReference[oaicite:7]{index=7}
-- A DNS resolver caches answers and outstanding query context. That is why poisoning and timing races matter. :contentReference[oaicite:8]{index=8}
-- A web application maintains sessions, cookies, CSRF assumptions, authorization state, and backend query context. That is why XSS, SQL injection, and session theft matter. :contentReference[oaicite:9]{index=9}
-- An authentication service tracks attempts, identities, and policy state. That is why dictionary attacks, lockout evasion, and privilege escalation matter. :contentReference[oaicite:10]{index=10}
-
+- A TCP server maintains connection state. That is why half-open connection abuse matters. 
+- A DNS resolver caches answers and outstanding query context. That is why poisoning and timing races matter. 
+- A web application maintains sessions, cookies, CSRF assumptions, authorization state, and backend query context. That is why XSS, SQL injection, and session theft matter. 
+- An authentication service tracks attempts, identities, and policy state. That is why dictionary attacks, lockout evasion, and privilege escalation matter. 
 A useful mental model is this:
 
 > **The attacker is always looking for expensive state on the defender’s side that can be triggered cheaply from the attacker’s side.**
@@ -141,14 +138,12 @@ A parser may process:
 
 Security failures appear when the defender assumes that input is only data, while the downstream component interprets part of that input as **structure**, **control**, or **code**.
 
-That is the heart of **injection**. OWASP defines injection as a class of application flaws in which untrusted input is sent to an interpreter and causes the interpreter to execute part of that input as commands. That description captures SQL injection, command injection, and several related problems. :contentReference[oaicite:11]{index=11}
-
-The same underlying logic appears in:
+That is the heart of **injection**. OWASP defines injection as a class of application flaws in which untrusted input is sent to an interpreter and causes the interpreter to execute part of that input as commands. That description captures SQL injection, command injection, and several related problems. 
 
 - SQL injection: input is treated as query logic,
 - XSS: input is emitted into a browser execution context,
 - command injection: input is interpreted by a shell or system command processor,
-- buffer overflow: input crosses an allocation boundary and corrupts nearby memory or control data. :contentReference[oaicite:12]{index=12}
+- buffer overflow: input crosses an allocation boundary and corrupts nearby memory or control data. 
 
 So one of the strongest foundations for students is this:
 
@@ -171,7 +166,7 @@ Common trust boundaries include:
 - app to OS,
 - removable device to endpoint,
 - employee to internal service,
-- one host to another host inside the same organization. :contentReference[oaicite:13]{index=13}
+- one host to another host inside the same organization. 
 
 Many attacks are easiest to understand as trust-boundary failures:
 
@@ -181,7 +176,7 @@ Many attacks are easiest to understand as trust-boundary failures:
 - **XSS** exploits trust in content rendered by the browser.
 - **Dictionary attacks** exploit exposed authentication boundaries.
 - **Spear phishing** exploits trust between a human and a message that appears legitimate.
-- **Botnets** exploit trust relationships among protocols and management infrastructure that can be hidden in normal traffic. :contentReference[oaicite:14]{index=14}
+- **Botnets** exploit trust relationships among protocols and management infrastructure that can be hidden in normal traffic. 
 
 Whenever you analyze a system, identify its trust boundaries first. Many of the attack paths will become obvious.
 
@@ -197,7 +192,7 @@ Identity in networked systems is layered and fragile:
 - DNS names are not the same as cryptographic proof.
 - An authenticated session is not the same as correct authorization.
 - A trusted sender display name is not the same as a trustworthy email.
-- A correct password is not the same as a safe workflow. :contentReference[oaicite:15]{index=15}
+- A correct password is not the same as a safe workflow. 
 
 This is why attacks often chain together:
 
@@ -222,7 +217,7 @@ Humans are routinely:
 - tricked into opening documents,
 - persuaded to trust spoofed urgency,
 - manipulated through interface design,
-- or induced to weaken security controls for convenience. :contentReference[oaicite:16]{index=16}
+- or induced to weaken security controls for convenience. 
 
 In practice, many successful campaigns do not begin by defeating encryption or bypassing firewalls. They begin by persuading a user to do something the attacker could not force technically.
 
@@ -283,7 +278,7 @@ A typical chain may look like this:
 7. lateral movement,
 8. exfiltration or disruption.
 
-This is why the course should not be read as a list of disconnected tricks. It should be read as a study of **how attackers move through systems by exploiting one boundary after another**. NIST’s incident-handling guidance is built around the reality that cyber risk must be understood across preparation, detection, analysis, containment, eradication, and recovery, not as isolated technical events. :contentReference[oaicite:17]{index=17}
+This is why the course should not be read as a list of disconnected tricks. It should be read as a study of **how attackers move through systems by exploiting one boundary after another**. NIST’s incident-handling guidance is built around the reality that cyber risk must be understood across preparation, detection, analysis, containment, eradication, and recovery, not as isolated technical events. 
 
 ---
 
@@ -400,6 +395,26 @@ As you study the rest of the tutorial:
 That is the mindset of a network security professional.
 
 ---
+
+## References
+
+1. Eddy, W. M. (Ed.). *RFC 9293: Transmission Control Protocol (TCP).* RFC Editor, August 2022.  
+   https://www.rfc-editor.org/rfc/rfc9293
+
+2. Mockapetris, P. *RFC 1034: Domain Names — Concepts and Facilities.* RFC Editor, November 1987.  
+   https://www.rfc-editor.org/rfc/rfc1034
+
+3. National Institute of Standards and Technology (NIST). *SP 800-61 Rev. 3: Incident Response Recommendations and Considerations for Cybersecurity Risk Management.* April 2025.  
+   https://csrc.nist.gov/pubs/sp/800/61/r3/final
+
+4. OWASP Foundation. *OWASP Top 10: 2025.*  
+   https://owasp.org/Top10/2025/
+
+5. OWASP Foundation. *A05:2025 – Injection.*  
+   https://owasp.org/Top10/2025/A05_2025-Injection/
+
+6. OWASP Foundation. *Cross Site Scripting (XSS).*  
+   https://owasp.org/www-community/attacks/xss/
 
 ## Page Navigation
 
