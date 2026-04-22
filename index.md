@@ -16,8 +16,8 @@ This website presents a structured tutorial on **network security attacks** for 
 
 ## Site Contents
 
-- [Foundations](foundations.md)
-- [TCP/IP, Spoofing, and DoS](tcp-ip-dos.md)
+- [Foundations](/docs/foundations.md)
+- [TCP/IP, Spoofing, and DoS](/docs/tcp-ip-dos.md)
 - [DNS and Cache Poisoning](dns-attacks.md)
 - [Buffer Overflow](buffer-overflow.md)
 - [Viruses and Worms](malware.md)
